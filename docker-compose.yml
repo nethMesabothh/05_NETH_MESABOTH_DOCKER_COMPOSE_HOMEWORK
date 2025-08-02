@@ -1,7 +1,6 @@
 version: '3.8'
 
 services:
-  # --- Core Services ---
 
   db:
     image: postgres:14-alpine
@@ -29,7 +28,6 @@ services:
       - db
     restart: always
 
-  # --- Bonus Services ---
 
   db-keycloak:
     image: postgres:14-alpine
